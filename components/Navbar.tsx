@@ -23,10 +23,10 @@ const Navbar: React.FC<NavbarProps> = ({ cartCount }) => {
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2 group">
-          <div className="w-10 h-10 bg-white flex items-center justify-center rounded-sm group-hover:rotate-45 transition-transform duration-300">
+          <div className="w-10 h-10 bg-white flex items-center justify-center rounded-xl group-hover:rotate-45 transition-transform duration-300">
             <Scissors className="text-black w-6 h-6" />
           </div>
-          <span className="font-syncopate text-xl font-bold tracking-tighter">BLOODRIDGE</span>
+          <span className="font-cinzel text-xl font-bold tracking-tighter">BLOODRIDGE</span>
         </Link>
 
         {/* Desktop Links */}
@@ -35,7 +35,7 @@ const Navbar: React.FC<NavbarProps> = ({ cartCount }) => {
             <Link
               key={link.path}
               to={link.path}
-              className={`text-sm font-medium tracking-widest hover:text-red-500 transition-colors ${
+              className={`text-sm font-bold tracking-widest hover:text-red-500 transition-colors font-cinzel ${
                 location.pathname === link.path ? 'text-red-500' : 'text-white'
               }`}
             >
@@ -45,7 +45,7 @@ const Navbar: React.FC<NavbarProps> = ({ cartCount }) => {
           <Link to="/cart" className="relative p-2 hover:bg-white/10 rounded-full transition-colors">
             <ShoppingCart className="w-6 h-6" />
             {cartCount > 0 && (
-              <span className="absolute -top-1 -right-1 bg-red-600 text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full">
+              <span className="absolute -top-1 -right-1 bg-red-600 text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full font-cinzel">
                 {cartCount}
               </span>
             )}
@@ -57,7 +57,7 @@ const Navbar: React.FC<NavbarProps> = ({ cartCount }) => {
           <Link to="/cart" className="relative p-2">
             <ShoppingCart className="w-6 h-6" />
             {cartCount > 0 && (
-              <span className="absolute -top-1 -right-1 bg-red-600 text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full">
+              <span className="absolute -top-1 -right-1 bg-red-600 text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full font-cinzel">
                 {cartCount}
               </span>
             )}
@@ -70,14 +70,14 @@ const Navbar: React.FC<NavbarProps> = ({ cartCount }) => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-20 left-0 w-full bg-black border-b border-white/10 animate-in fade-in slide-in-from-top-4">
+        <div className="md:hidden absolute top-20 left-0 w-full bg-black border-b border-white/10 rounded-b-3xl animate-in fade-in slide-in-from-top-4">
           <div className="flex flex-col p-6 space-y-4">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className={`text-lg font-bold tracking-widest ${
+                className={`text-lg font-bold tracking-widest font-cinzel ${
                   location.pathname === link.path ? 'text-red-500' : 'text-white'
                 }`}
               >
