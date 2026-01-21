@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Bloodridge - Tattoos & Streetwear",
+  "description": "A high-contrast, edgy platform for Bloodridge tattoo studio and their exclusive streetwear clothing line. Features a tattoo gallery, booking system, and full e-commerce experience.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
