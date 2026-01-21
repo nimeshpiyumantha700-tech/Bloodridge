@@ -49,7 +49,7 @@ const App: React.FC = () => {
 
   return (
     <Router>
-      <div className="min-h-screen flex flex-col bg-black text-white selection:bg-red-500 selection:text-white">
+      <div className="min-h-screen flex flex-col bg-white text-black selection:bg-red-600 selection:text-white">
         <Navbar cartCount={cartCount} />
         <main className="flex-grow pt-20">
           <Routes>

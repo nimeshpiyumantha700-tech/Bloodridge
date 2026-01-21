@@ -10,8 +10,8 @@
     <style>
         body {
             font-family: 'EB Garamond', serif;
-            background-color: #000;
-            color: #fff;
+            background-color: #ffffff;
+            color: #1a1a1a;
             scroll-behavior: smooth;
         }
         .font-cinzel {
@@ -21,19 +21,19 @@
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #000;
+            background: #ffffff;
         }
         ::-webkit-scrollbar-thumb {
-            background: #333;
+            background: #e5e5e5;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #555;
+            background: #cccccc;
         }
-        .text-outline-white {
-            -webkit-text-stroke: 1px rgba(255,255,255,0.6);
+        .text-outline-black {
+            -webkit-text-stroke: 1px rgba(0,0,0,0.4);
         }
         @keyframes float-up {
-          0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.8; }
+          0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.6; }
           100% { transform: translateY(-100vh) translateX(50px) scale(0); opacity: 0; }
         }
         .ember {
@@ -41,13 +41,13 @@
           bottom: -20px;
           width: 2px;
           height: 2px;
-          background: #ff6600;
+          background: #ff4500;
           border-radius: 50%;
           filter: blur(1px);
           animation: float-up linear infinite;
         }
-        .ember-1 { width: 3px; height: 3px; background: #ff3300; }
-        .ember-2 { width: 4px; height: 4px; background: #ffaa00; }
+        .ember-1 { width: 3px; height: 3px; background: #ff2200; }
+        .ember-2 { width: 4px; height: 4px; background: #ff8800; }
     </style>
 <script type="importmap">
 {
