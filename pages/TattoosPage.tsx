@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { TATTOOS } from '../constants';
-import { brainstormTattooIdea } from '../services/geminiService';
+import { TATTOOS } from '../constants.tsx';
+import { brainstormTattooIdea } from '../services/geminiService.ts';
 import { Sparkles, Loader2, X } from 'lucide-react';
 
 const TattoosPage: React.FC = () => {

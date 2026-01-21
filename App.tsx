@@ -1,19 +1,19 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import { CartItem, Product } from './types';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import { CartItem, Product } from './types.ts';
+import Navbar from './components/Navbar.tsx';
+import Footer from './components/Footer.tsx';
 
 // Pages
-import HomePage from './pages/HomePage';
-import TattoosPage from './pages/TattoosPage';
-import ShopPage from './pages/ShopPage';
-import ProductDetailPage from './pages/ProductDetailPage';
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
-import CartPage from './pages/CartPage';
-import BookingPage from './pages/BookingPage';
+import HomePage from './pages/HomePage.tsx';
+import TattoosPage from './pages/TattoosPage.tsx';
+import ShopPage from './pages/ShopPage.tsx';
+import ProductDetailPage from './pages/ProductDetailPage.tsx';
+import AboutPage from './pages/AboutPage.tsx';
+import ContactPage from './pages/ContactPage.tsx';
+import CartPage from './pages/CartPage.tsx';
+import BookingPage from './pages/BookingPage.tsx';
 
 const App: React.FC = () => {
   const [cart, setCart] = useState<CartItem[]>([]);
